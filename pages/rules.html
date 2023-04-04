@@ -30,10 +30,10 @@
 		<!-- ===== css | font awesome | end ===== -->
 		<!-- ===== css | custom | start ===== -->
 		<link rel="stylesheet" href="../styles/index.css" />
-		<link rel="stylesheet" href="./styles/rules.css" />
+		<link rel="stylesheet" href="../styles/rules.css" />
 		<!-- ===== css | custom | end ===== -->
 		<!-- ===== favicon | start ===== -->
-		<link rel="icon" type="image/x-icon" href="#" />
+		<link rel="icon" type="image/x-icon" href="../images/mtg-favicon.png" />
 		<!-- ===== favicon | end ===== -->
 		<!-- ===== title | start ===== -->
 		<title>Magic: The Gathering | Unofficial Website | Rules & Formats</title>
@@ -45,13 +45,16 @@
 			<!-- ===== nav | container | start ===== -->
 			<div class="container nav-container">
 				<!-- ===== nav | mtg logo | start ===== -->
-				<img src="#" alt="#" />
+				<img
+					src="../images/mtg-logo-white.png"
+					alt="Magic: The Gathering Logo"
+				/>
 				<!-- ===== nav | mtg logo | end ===== -->
 				<!-- ===== nav | menu | start ===== -->
 				<ul class="nav-menu">
-					<li><a href="#">Home</a></li>
+					<li><a href="../index.html">Home</a></li>
 					<li><a href="./pages/lore.html">Lore</a></li>
-					<li><a href="./pages/rules.html">Rules</a></li>
+					<li><a href="#">Rules</a></li>
 					<li><a href="./pages/database.html">Card Database</a></li>
 					<li><a href="./pages/contact.html">Contact</a></li>
 				</ul>
@@ -66,7 +69,10 @@
 			<div class="container header-container">
 				<!-- ===== header | phyrexia logo | start ===== -->
 				<div class="rules-header-img">
-					<img src="#" alt="#" />
+					<img
+						src="../images/mtg-logo-white.png"
+						alt="Magic: The Gathering Logo"
+					/>
 				</div>
 				<!-- ===== header | phyrexia logo | end ===== -->
 				<!-- ===== header | info | start ===== -->
@@ -86,11 +92,13 @@
 			<section class="formats-and-rules-filter">
 				<h1>FORMATS & RULES</h1>
 				<div class="formats-rules-filter">
-					<p id="formatsFilter">FORMATS</p>
-					<p id="rulesFilter">RULES</p>
+					<button id="formatsFilter" class="rules-btn active active-button">
+						FORMATS
+					</button>
+					<button id="rulesFilter" class="rules-btn">RULES</button>
 				</div>
 			</section>
-			<section class="container rules-container">
+			<section class="container rules-container content" id="theRulesContent">
 				<article class="rules-info-container">
 					<div class="game-actions-container">
 						<h2>GAME ACTIONS</h2>
@@ -341,7 +349,7 @@
 					</div>
 				</article>
 			</section>
-			<section class="parts-of-the-turn">
+			<section class="parts-of-the-turn content" id="thePartsContent">
 				<h1>PARTS OF THE TURN</h1>
 				<p>
 					Each turn proceeds in the same sequence. Whenever you enter a new step
@@ -465,7 +473,10 @@
 					</div>
 				</article>
 			</section>
-			<section class="container formats-container">
+			<section
+				class="container formats-container content active"
+				id="theFormatsContent"
+			>
 				<article class="formats-menu">
 					<ul>
 						<li class="format-item">Commander</li>
@@ -1661,35 +1672,58 @@
 				<!-- ===== div | wotc side | start ===== -->
 				<div class="wotc-side">
 					<h2>MAGIC: THE GATHERING</h2>
-					<img src="#" alt="#" />
+					<img
+						src="../images/wizards-logo.png"
+						alt="Wizards of the Coast Logo"
+					/>
 					<ul class="footer-terms-links">
-						<li><a href="#" target="_blank">Terms</a></li>
-						<li><a href="#" target="_blank">Privacy Policy</a></li>
-						<li><a href="#" target="_blank">Code of Conduct</a></li>
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/terms"
+								target="_blank"
+								>Terms</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/wizards-coasts-privacy-policy"
+								target="_blank"
+								>Privacy Policy</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://company.wizards.com/en/legal/code-conduct"
+								target="_blank"
+								>Code of Conduct</a
+							>
+						</li>
 					</ul>
 					<ul class="footer-wotc-social">
 						<li>
-							<a href="#" target="_blank"
+							<a href="https://twitter.com/wizards_magic" target="_blank"
 								><i class="fa-brands fa-twitter"></i
 							></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"
+							<a
+								href="https://www.facebook.com/MagicTheGathering"
+								target="_blank"
 								><i class="fa-brands fa-facebook-f"></i
 							></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"
+							<a href="https://www.instagram.com/wizards_magic/" target="_blank"
 								><i class="fa-brands fa-instagram"></i
 							></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"
+							<a href="https://www.youtube.com/@mtg" target="_blank"
 								><i class="fa-brands fa-youtube"></i
 							></a>
 						</li>
 						<li>
-							<a href="#" target="_blank"
+							<a href="https://www.twitch.tv/magic" target="_blank"
 								><i class="fa-brands fa-twitch"></i
 							></a>
 						</li>
@@ -1698,7 +1732,7 @@
 				<!-- ===== div | wotc side | end ===== -->
 				<!-- ===== div | dev side | start ===== -->
 				<div class="dev-side">
-					<h2>WESITE DEVELOPERS</h2>
+					<h2>WEBSITE DEVELOPERS</h2>
 					<!-- ===== div | dev info container | start ===== -->
 					<div class="dev-info-container">
 						<!-- ===== dev info | dev #001 | start ===== -->
@@ -1711,12 +1745,14 @@
 							</ul>
 							<ul class="dev-info-socials">
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://github.com/andrehaffner/" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a
+										href="https://www.linkedin.com/in/andrehaffner/"
+										target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
@@ -1738,28 +1774,36 @@
 							<h3>Breno Alcântara</h3>
 							<h4>Front-End Developer</h4>
 							<ul class="dev-loc-phone">
-								<li><i class="fa-solid fa-location-dot"></i> Vancouver, CA</li>
-								<li><i class="fa-brands fa-whatsapp"></i> +1 (604) 445-6359</li>
+								<li><i class="fa-solid fa-location-dot"></i> Brasília, DF</li>
+								<li>
+									<i class="fa-brands fa-whatsapp"></i> +55 61 9 9122-5677
+								</li>
 							</ul>
 							<ul class="dev-info-socials">
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://github.com/breno-alcantara" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a
+										href="https://www.linkedin.com/in/brenosalcantara"
+										target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a
+										href="https://www.instagram.com/brenosalcantara/"
+										target="_blank"
 										><i class="fa-brands fa-instagram"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
-										><i class="fa-brands fa-twitter"></i
+									<a
+										href="https://www.facebook.com/Breno.Alcantara"
+										target="_blank"
+										><i class="fa-brands fa-facebook-f"></i
 									></a>
 								</li>
 							</ul>
@@ -1770,28 +1814,27 @@
 							<h3>Lorena Costa</h3>
 							<h4>Front-End Developer</h4>
 							<ul class="dev-loc-phone">
-								<li><i class="fa-solid fa-location-dot"></i> Vancouver, CA</li>
-								<li><i class="fa-brands fa-whatsapp"></i> +1 (604) 445-6359</li>
+								<li><i class="fa-solid fa-location-dot"></i> Lisboa, PT</li>
+								<li><i class="fa-brands fa-whatsapp"></i> +351 910 471 812</li>
 							</ul>
 							<ul class="dev-info-socials">
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://github.com/Lorenamvcosta/" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a
+										href="https://linkedin.com/in/lorenamvcosta/"
+										target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a
+										href="https://www.instagram.com/lorenamvcosta/"
+										target="_blank"
 										><i class="fa-brands fa-instagram"></i
-									></a>
-								</li>
-								<li>
-									<a href="#" target="_blank"
-										><i class="fa-brands fa-twitter"></i
 									></a>
 								</li>
 							</ul>
@@ -1802,27 +1845,29 @@
 							<h3>Yann Costa</h3>
 							<h4>Front-End Developer</h4>
 							<ul class="dev-loc-phone">
-								<li><i class="fa-solid fa-location-dot"></i> Vancouver, CA</li>
-								<li><i class="fa-brands fa-whatsapp"></i> +1 (604) 445-6359</li>
+								<li><i class="fa-solid fa-location-dot"></i> São Paulo, SP</li>
+								<li>
+									<i class="fa-brands fa-whatsapp"></i> +55 11 9 8439-7728
+								</li>
 							</ul>
 							<ul class="dev-info-socials">
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://github.com/ynncstslv/" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://linkedin.com/in/ynncstslv/" target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://instagram.com/ynncstslv" target="_blank"
 										><i class="fa-brands fa-instagram"></i
 									></a>
 								</li>
 								<li>
-									<a href="#" target="_blank"
+									<a href="https://twitter.com/dltyrslf" target="_blank"
 										><i class="fa-brands fa-twitter"></i
 									></a>
 								</li>
