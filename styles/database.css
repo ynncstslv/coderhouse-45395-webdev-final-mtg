@@ -1,0 +1,28 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ database.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.database_main {
+    background-color:black;
+
+}
+
+.search{
+}
+
+.search_title{
+    font-family: Poppins, SansSerif, serif;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0.14em;
+    text-align: center;
+}
+
+.search_bar{
+    margin:100px auto;
+}
+
+.search_button{
+    background-color:orangered;
+    color:white;
+    border-radius:10px;
+}
