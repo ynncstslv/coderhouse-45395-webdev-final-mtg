@@ -40,6 +40,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="../styles/index.css" />
 		<link rel="stylesheet" href="../styles/rules.css" />
 		<link
 			rel="icon"
@@ -49,17 +50,12 @@
 		<title>Magic: The Gathering | Unofficial Website | Rules</title>
 	</head>
 	<body>
-		<!-- ===== nav | start ===== -->
 		<nav>
-			<!-- ===== nav | container | start ===== -->
 			<div class="container nav-container">
-				<!-- ===== nav | mtg logo | start ===== -->
 				<img
-					src="../images/mtg-logo-white.png"
+					src="../assets/images/nav/mtg-logo-white.png"
 					alt="Magic: The Gathering Logo"
 				/>
-				<!-- ===== nav | mtg logo | end ===== -->
-				<!-- ===== nav | menu | start ===== -->
 				<ul class="nav-menu">
 					<li><a href="../index.html">Home</a></li>
 					<li><a href="./pages/lore.html">Lore</a></li>
@@ -67,36 +63,24 @@
 					<li><a href="./pages/database.html">Card Database</a></li>
 					<li><a href="./pages/contact.html">Contact</a></li>
 				</ul>
-				<!-- ===== nav | menu | end ===== -->
 			</div>
-			<!-- ===== nav | container | end ===== -->
 		</nav>
-		<!-- ===== nav | end ===== -->
-		<!-- ===== header | start ===== -->
 		<header>
-			<!-- ===== header | container | start ===== -->
 			<div class="container header-container">
-				<!-- ===== header | phyrexia logo | start ===== -->
 				<div class="rules-header-img">
 					<img
-						src="../images/mtg-logo-white.png"
+						src="../assets/images/nav/mtg-logo-white.png"
 						alt="Magic: The Gathering Logo"
 					/>
 				</div>
-				<!-- ===== header | phyrexia logo | end ===== -->
-				<!-- ===== header | info | start ===== -->
 				<div class="header-info">
 					<p>
 						Looking for ways to play? Get started with Magic: The Gathering, and
 						dive into the rules and mechanics, with these great resources!
 					</p>
 				</div>
-				<!-- ===== header | info | end ===== -->
 			</div>
-			<!-- ===== header | container | end ===== -->
 		</header>
-		<!-- ===== header | end ===== -->
-		<!-- ===== main | start ===== -->
 		<main>
 			<section class="formats-and-rules-filter">
 				<h1>FORMATS & RULES</h1>
@@ -117,113 +101,130 @@
 							blocking with creatures in combat.
 						</p>
 						<div class="game-actions-info">
-							<h3>TAPPING AND UNTAPPING</h3>
-							<p>
-								To tap a card is to turn it sideways to show that it has been
-								used for the turn. You do this when you use a land to make mana,
-								when you attack with a creature, or when you activate an ability
-								that has the symbol as part of its cost ( means "tap this
-								permanent"). When a permanent is tapped, you can’t tap it again
-								until it’s been untapped (turned back upright). As your turn
-								begins, untap your tapped cards so you can use them again.
-							</p>
-							<h3>CASTING SPELLS</h3>
-							<p>
-								To cast a spell, you must pay its mana cost (located in the
-								upper right corner of the card) by tapping lands (or other
-								permanents) to make the amount and Game Actions type of mana
-								which that spell requires. For example, if you were casting
-								Serra Angel, which costs , you could tap three basic lands of
-								any type to pay plus two Plains to pay .
-							</p>
-							<p>
-								Once a spell has been cast, one of two things happens. If the
-								spell is an instant or a sorcery, you follow the instructions on
-								the card, and then you put the card into your graveyard. If the
-								spell is a creature, artifact, or enchantment, you put the card
-								on the table in front of you. The card is now on the
-								battlefield.
-							</p>
-							<p>
-								Cards on the battlefield are called permanents to differentiate
-								them from instants and sorceries, which are never on the
-								battlefield.
-							</p>
-							<img src="#" alt="#" />
-							<h3>ATTACKING AND BLOCKING</h3>
-							<p>
-								The most common way to win the game is to attack with your
-								creatures. If a creature that is attacking an opponent isn’t
-								blocked, it deals damage equal to its power to that opponent.
-							</p>
-							<p>
-								The middle phase of each turn is the combat phase. In your
-								combat phase, you choose which of your creatures will attack,
-								and you choose which opponents they will attack. Tap your
-								creatures to show that they are attacking. Your opponents then
-								choose which of their creatures will block, if any. Tapped
-								creatures can’t be declared as blockers.
-							</p>
-							<p>
-								Once all blockers have been chosen, each creature—both attackers
-								and blockers—simultaneously deals damage equal to its power (the
-								number on the left side of the slash in the lower right corner
-								of the card).
-							</p>
-							<ul>
-								<li>
-									An attacking creature that isn’t blocked deals damage to the
-									player it’s attacking.
-								</li>
-								<li>
-									An attacking creature that is blocked deals damage to the
-									creature or creatures that are blocking it, and vice versa.
-								</li>
-								<li>
-									If damage is dealt to your opponent, they lose that much life.
-								</li>
-							</ul>
-							<p>
-								If one of your attacking creatures is blocked by multiple
-								creatures, you decide how to divide its combat damage among
-								them. You must assign at least enough damage to the first
-								blocking creature to destroy it before you can assign damage to
-								the second one, and so on.
-							</p>
-							<p>
-								If a creature is dealt damage equal to or greater than its
-								toughness over the course of a single turn (whether it be combat
-								damage, damage from spells or abilities, or a combination of
-								both), that creature is destroyed, and it goes to its owner’s
-								graveyard (or "dies"). If a creature takes damage that isn’t
-								enough to destroy it in a single turn, that creature stays on
-								the battlefield, and the damage wears off at the end of the
-								turn.
-							</p>
-							<img src="#" alt="#" />
-							<p>
-								In this example, Dwarven Priest is attacking, and you have two
-								creatures that can block. When you block one attacker with two
-								or more creatures, your opponent must choose the order in which
-								your blockers will take damage. Remember, the attacking player
-								always chooses the order in which blocking creatures receive
-								damage.
-							</p>
-							<p>
-								Reclamation Sage and Giant Spider will deal a total of 4 damage
-								to Dwarven Priest, which is enough to destroy it. Meanwhile,
-								Dwarven Priest can deal enough damage to destroy Reclamation
-								Sage, but not enough to destroy Giant Spider. Since your
-								opponent’s Dwarven Priest will be destroyed in either case, they
-								order Reclamation Sage before Giant Spider so that at least one
-								of your creatures will be destroyed.
-							</p>
-							<img src="#" alt="#" />
-							<p>
-								Once blockers have been ordered, damage is dealt. Dwarven Priest
-								deals 1 damage to Reclamation Sage, destroying it, then deals
-								its remaining 1 damage to Giant Spider.
-							</p>
+							<div class="tapping">
+								<h3>TAPPING AND UNTAPPING</h3>
+								<p>
+									To tap a card is to turn it sideways to show that it has been
+									used for the turn. You do this when you use a land to make
+									mana, when you attack with a creature, or when you activate an
+									ability that has the symbol as part of its cost ( means "tap
+									this permanent"). When a permanent is tapped, you can’t tap it
+									again until it’s been untapped (turned back upright). As your
+									turn begins, untap your tapped cards so you can use them
+									again.
+								</p>
+							</div>
+							<div class="casting">
+								<h3>CASTING SPELLS</h3>
+								<p>
+									To cast a spell, you must pay its mana cost (located in the
+									upper right corner of the card) by tapping lands (or other
+									permanents) to make the amount and Game Actions type of mana
+									which that spell requires. For example, if you were casting
+									Serra Angel, which costs , you could tap three basic lands of
+									any type to pay plus two Plains to pay .
+								</p>
+								<p>
+									Once a spell has been cast, one of two things happens. If the
+									spell is an instant or a sorcery, you follow the instructions
+									on the card, and then you put the card into your graveyard. If
+									the spell is a creature, artifact, or enchantment, you put the
+									card on the table in front of you. The card is now on the
+									battlefield.
+								</p>
+								<p>
+									Cards on the battlefield are called permanents to
+									differentiate them from instants and sorceries, which are
+									never on the battlefield.
+								</p>
+								<div class="casting-img">
+									<img src="../assets/images/rules/rules-01.png" alt="#" />
+								</div>
+							</div>
+							<div class="attacking">
+								<h3>ATTACKING AND BLOCKING</h3>
+								<p>
+									The most common way to win the game is to attack with your
+									creatures. If a creature that is attacking an opponent isn’t
+									blocked, it deals damage equal to its power to that opponent.
+								</p>
+								<p>
+									The middle phase of each turn is the combat phase. In your
+									combat phase, you choose which of your creatures will attack,
+									and you choose which opponents they will attack. Tap your
+									creatures to show that they are attacking. Your opponents then
+									choose which of their creatures will block, if any. Tapped
+									creatures can’t be declared as blockers.
+								</p>
+								<p>
+									Once all blockers have been chosen, each creature—both
+									attackers and blockers—simultaneously deals damage equal to
+									its power (the number on the left side of the slash in the
+									lower right corner of the card).
+								</p>
+								<ul>
+									<li>
+										An attacking creature that isn’t blocked deals damage to the
+										player it’s attacking.
+									</li>
+									<li>
+										An attacking creature that is blocked deals damage to the
+										creature or creatures that are blocking it, and vice versa.
+									</li>
+									<li>
+										If damage is dealt to your opponent, they lose that much
+										life.
+									</li>
+								</ul>
+								<p>
+									If one of your attacking creatures is blocked by multiple
+									creatures, you decide how to divide its combat damage among
+									them. You must assign at least enough damage to the first
+									blocking creature to destroy it before you can assign damage
+									to the second one, and so on.
+								</p>
+								<p>
+									If a creature is dealt damage equal to or greater than its
+									toughness over the course of a single turn (whether it be
+									combat damage, damage from spells or abilities, or a
+									combination of both), that creature is destroyed, and it goes
+									to its owner’s graveyard (or "dies"). If a creature takes
+									damage that isn’t enough to destroy it in a single turn, that
+									creature stays on the battlefield, and the damage wears off at
+									the end of the turn.
+								</p>
+								<div class="attacking-img">
+									<img src="../assets/images/rules/rules-02-01.png" alt="#" />
+									<img src="../assets/images/rules/rules-02-02.png" alt="#" />
+									<img src="../assets/images/rules/rules-02-03.png" alt="#" />
+									<img src="../assets/images/rules/rules-02-04.png" alt="#" />
+								</div>
+								<p>
+									In this example, Dwarven Priest is attacking, and you have two
+									creatures that can block. When you block one attacker with two
+									or more creatures, your opponent must choose the order in
+									which your blockers will take damage. Remember, the attacking
+									player always chooses the order in which blocking creatures
+									receive damage.
+								</p>
+								<p>
+									Reclamation Sage and Giant Spider will deal a total of 4
+									damage to Dwarven Priest, which is enough to destroy it.
+									Meanwhile, Dwarven Priest can deal enough damage to destroy
+									Reclamation Sage, but not enough to destroy Giant Spider.
+									Since your opponent’s Dwarven Priest will be destroyed in
+									either case, they order Reclamation Sage before Giant Spider
+									so that at least one of your creatures will be destroyed.
+								</p>
+								<div class="attacking-img last-img">
+									<img src="../assets/images/rules/rules-03.png" alt="#" />
+								</div>
+								<p>
+									Once blockers have been ordered, damage is dealt. Dwarven
+									Priest deals 1 damage to Reclamation Sage, destroying it, then
+									deals its remaining 1 damage to Giant Spider.
+								</p>
+							</div>
 						</div>
 						<div class="advanced-topics-container">
 							<h2>ADVANCED TOPICS</h2>
@@ -261,7 +262,7 @@
 									affect it. If none of the targets are legal, the spell or
 									ability does nothing at all.
 								</p>
-								<h3>THE STACK</h3>
+								<h3 class="stack">THE STACK</h3>
 								<p>
 									The stack is a game zone shared by all players (like the
 									battlefield) where spells and abilities wait to resolve.
@@ -311,7 +312,9 @@
 										is, decline to do anything more—the top spell or ability on
 										the stack will resolve.
 									</p>
-									<img src="#" alt="#" />
+									<div class="stack-img">
+										<img src="../assets/images/rules/rules-04.png" alt="#" />
+									</div>
 									<p>
 										After a spell or ability resolves, both players again get
 										the chance to respond. If no one does, the next thing
@@ -340,7 +343,9 @@
 										to the pumped-up Eager Construct, which is not enough to
 										destroy it.
 									</p>
-									<img src="#" alt="#" />
+									<div class="stack-img">
+										<img src="../assets/images/rules/rules-05.png" alt="#" />
+									</div>
 									<p>
 										<b>What would happen if Titanic Growth were cast first?</b>
 									</p>
@@ -1673,12 +1678,8 @@
 				</aside>
 			</section>
 		</main>
-		<!-- ===== main | end ===== -->
-		<!-- ===== footer | start ===== -->
 		<footer>
-			<!-- ===== footer | section | links | start ===== -->
 			<section class="footer-links">
-				<!-- ===== div | wotc side | start ===== -->
 				<div class="wotc-side">
 					<h2>MAGIC: THE GATHERING</h2>
 					<img
@@ -1738,13 +1739,9 @@
 						</li>
 					</ul>
 				</div>
-				<!-- ===== div | wotc side | end ===== -->
-				<!-- ===== div | dev side | start ===== -->
 				<div class="dev-side">
 					<h2>WEBSITE DEVELOPERS</h2>
-					<!-- ===== div | dev info container | start ===== -->
 					<div class="dev-info-container">
-						<!-- ===== dev info | dev #001 | start ===== -->
 						<div class="dev-info">
 							<h3>André Haffner</h3>
 							<h4>Front-End Developer</h4>
@@ -1777,8 +1774,6 @@
 								</li>
 							</ul>
 						</div>
-						<!-- ===== dev info | dev #001 | end ===== -->
-						<!-- ===== dev info | dev #002 | start ===== -->
 						<div class="dev-info">
 							<h3>Breno Alcântara</h3>
 							<h4>Front-End Developer</h4>
@@ -1817,8 +1812,6 @@
 								</li>
 							</ul>
 						</div>
-						<!-- ===== dev info | dev #002 | end ===== -->
-						<!-- ===== dev info | dev #003 | start ===== -->
 						<div class="dev-info">
 							<h3>Lorena Costa</h3>
 							<h4>Front-End Developer</h4>
@@ -1848,8 +1841,6 @@
 								</li>
 							</ul>
 						</div>
-						<!-- ===== dev info | dev #003 | end ===== -->
-						<!-- ===== dev info | dev #004 | start ===== -->
 						<div class="dev-info">
 							<h3>Yann Costa</h3>
 							<h4>Front-End Developer</h4>
@@ -1882,37 +1873,24 @@
 								</li>
 							</ul>
 						</div>
-						<!-- ===== dev info | dev #004 | end ===== -->
 					</div>
-					<!-- ===== div | dev info container | end ===== -->
 				</div>
-				<!-- ===== div | dev side | end ===== -->
 			</section>
-			<!-- ===== footer | section | links | end ===== -->
-			<!-- ===== footer | section | copyright | start ===== -->
 			<section class="copyright">
-				<!-- ===== section | copyright | left | start ===== -->
 				<div class="footer-copyright-left">
 					<small
 						>Magic: The Gathering &copy;1993-2023 Wizards of the Coast
 						LLC.</small
 					>
 				</div>
-				<!-- ===== section | copyright | left | end ===== -->
-				<!-- ===== section | copyright | right | start ===== -->
 				<div class="footer-copyright-right">
 					<small
 						>Website created by André Haffner, Breno Alcântara, Lorena Costa e
 						Yann Costa &copy;2023 Copyright</small
 					>
 				</div>
-				<!-- ===== section | copyright | right | end ===== -->
 			</section>
-			<!-- ===== footer | section | copyright | end ===== -->
 		</footer>
-		<!-- ===== footer | end ===== -->
-		<!-- ===== js | custom | start ===== -->
 		<script src="../scripts/script.js"></script>
-		<!-- ===== js | custom | end ===== -->
 	</body>
 </html>
