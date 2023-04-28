@@ -127,7 +127,8 @@ header {
 
 .casting-img,
 .attacking-img,
-.stack-img {
+.stack-img,
+.parts-img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -150,7 +151,8 @@ header {
 	color: var(--color-gold-light);
 }
 
-.attacking ul li::before {
+.attacking ul li::before,
+.parts-info ul li::before {
 	content: '•';
 	padding: 0 0.5rem;
 }
@@ -186,4 +188,58 @@ header {
 
 .stack-img img {
 	width: 25%;
+}
+
+/* parts of the turn */
+
+.parts-of-the-turn {
+	max-width: var(--container-width-lg);
+	padding: 2rem 0 6rem;
+	margin: 0 auto;
+}
+
+.parts-of-the-turn h1 {
+	margin-bottom: 2rem;
+	font-size: 2.5rem;
+	letter-spacing: 0.5rem;
+	color: var(--color-gold-light);
+	text-align: center;
+}
+
+.parts-of-the-turn > p {
+	max-width: 80%;
+	margin: 0 auto;
+	font-weight: 200;
+	text-align: center;
+}
+
+.parts-img {
+	padding: 1.5rem;
+}
+
+.parts-info {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+.parts-info h2 {
+	margin-bottom: 1rem;
+	font-weight: 500;
+	font-size: 1.5rem;
+	text-align: left;
+	color: var(--color-orange);
+}
+
+.parts-info ul {
+	margin-bottom: 3rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 1.8;
+}
+
+.parts-info span {
+	font-size: 1rem;
+	text-decoration: underline;
+	color: var(--color-gold-light);
 }
