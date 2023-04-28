@@ -1,5 +1,5 @@
 header {
-	background-image: url('../images/mtg-cards-rules.jpg');
+	background-image: url('../assets/images/rules/rules-bg.jpg');
 }
 
 .header-container {
@@ -18,6 +18,7 @@ header {
 /* formats & rules filter */
 
 .formats-and-rules-filter {
+	padding: 3rem 0;
 	text-align: center;
 }
 
@@ -57,4 +58,132 @@ header {
 	color: var(--color-gold-light);
 	background-color: var(--color-gold-dark);
 	box-shadow: inset 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+/* game actions & advanced topics */
+
+.rules-info-container {
+	max-width: var(--container-width-lg);
+	margin: 0 auto;
+}
+
+.game-actions-container h2 {
+	margin-bottom: 1.2rem;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	color: var(--color-orange);
+}
+
+.game-actions-container > p,
+.advanced-topics-container > p {
+	width: 60%;
+	margin: 0 auto 2.5rem;
+	font-weight: 200;
+	font-size: 1rem;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.game-actions-info,
+.advanced-topics-info {
+	max-width: 90%;
+	height: 90vh;
+	padding: 2rem;
+	margin: 0 auto 6rem;
+	border: 2px solid var(--color-gold-light);
+	border-radius: 15px;
+	background-color: #181818;
+	box-shadow: inset 0 1rem 2rem rgba(0, 0, 0, 0.5);
+	overflow-y: scroll;
+}
+
+.game-actions-info h3,
+.advanced-topics-info h3 {
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: var(--color-gold-light);
+	margin-bottom: 1rem;
+}
+
+.game-actions-info h3::before,
+.advanced-topics-info h3::before {
+	content: '•';
+	padding: 0 1rem;
+}
+
+.game-actions-info p,
+.advanced-topics-info p {
+	margin: 1.2rem 0;
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 0.9rem;
+	line-height: 1.8;
+}
+
+.tapping p {
+	margin-bottom: 3rem;
+}
+
+.casting-img,
+.attacking-img,
+.stack-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.attacking-img {
+	gap: 5rem;
+}
+
+.last-img img {
+	width: 18%;
+}
+
+.attacking ul {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 0.8rem;
+	font-style: italic;
+	line-height: 1.6;
+	color: var(--color-gold-light);
+}
+
+.attacking ul li::before {
+	content: '•';
+	padding: 0 0.5rem;
+}
+
+.stack {
+	margin-top: 4rem;
+}
+
+.stack-info {
+	max-width: 90%;
+	margin: 3rem auto 0;
+}
+
+.stack-info h4 {
+	margin-top: 3rem;
+	font-weight: 400;
+	font-size: 0.9rem;
+	text-decoration: underline;
+}
+
+.stack-info p {
+	font-size: 0.8rem;
+	color: #d7d7d7;
+}
+
+.stack-info em {
+	color: var(--color-gold-light);
+}
+
+.stack-info b {
+	color: var(--color-orange);
+}
+
+.stack-img img {
+	width: 25%;
 }
