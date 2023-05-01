@@ -1,0 +1,15 @@
+main{
+    background-color:aqua;
+    margin: 0%;
+    padding:0%;
+}
+main h1 { color: rgba(245, 239, 239, 0.925);}
+p{color: rgba(245, 239, 239, 0.925);} 
+
+nav h2{
+    font-style: normal;
+    color: rgba(204, 8, 8, 0.918);
+}
+h3{color: rgba(245, 239, 239, 0.925);} 
+
+nav li {color: rgba(245, 239, 239, 0.925); }
