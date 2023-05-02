@@ -439,10 +439,11 @@ header {
 	text-align: right;
 }
 
+/* gap de 4 para 2.5rem - Breno */
 .dev-info-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 4rem;
+	gap: 2.5rem;
 }
 
 .dev-info h3 {
