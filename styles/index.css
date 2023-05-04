@@ -464,8 +464,10 @@ header {
 	color: var(--color-gold-dark);
 }
 
+
+/* === Breno alterou o paddin de 0.8 para 0.3 === */
 .dev-loc-phone li i {
-	padding-right: 0.8rem;
+	padding-right: 0.3rem;
 }
 
 .dev-info-socials {
