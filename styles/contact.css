@@ -1,6 +1,6 @@
 /* contact header */
 
-/* header {
+header {
 	background-image: url('../assets/images/contact/contact-bg-grad.jpg');
 }
 
@@ -15,17 +15,17 @@
 .contact-header-img img {
 	width: 80%;
 	margin-bottom: 1.5rem;
-} */
+}
 
 /* section */
 
-/* section {
+section {
 	padding: 2rem 0 6rem;
-} */
+}
 
 /* contact container */
 
-/* .contact-container {
+.contact-container {
 	max-width: var(--container-width-lg);
 }
 
@@ -37,11 +37,11 @@
 	margin: 0 auto;
 	border: 2px solid transparent;
 	border-radius: 15px;
-} */
+}
 
 /* contact left */
 
-/* .contact-left {
+.contact-left {
 	padding: 4rem;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
@@ -108,21 +108,21 @@
 
 .dev-card-socials a:hover {
 	color: var(--color-gold-light);
-} */
+}
 
 /* contact right */
 
-/* .contact-right {
+.contact-right {
 	height: 100%;
 	padding: 3rem;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
 	background-color: var(--color-orange);
-} */
+}
 
 /* form */
 
-/* label {
+label {
 	padding: 1rem;
 	font-size: 0.9rem;
 	color: #141414;
@@ -177,4 +177,4 @@ textarea:focus {
 	color: #000;
 	background-color: var(--color-gold-light);
 	transform: scale(1.01);
-} */
+}
