@@ -1,28 +1,185 @@
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ database.css ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* database nav */
 
-.database_main {
-    background-color:black;
-
+.nav-menu a:hover {
+	color: #aaa1b9;
 }
 
-.search{
+/* database header */
+
+header {
+	background-image: url('../assets/images/card-database/sheoldred-grad.jpg');
 }
 
-.search_title{
-    font-family: Poppins, SansSerif, serif;
-    font-size: 31px;
-    font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 0.14em;
-    text-align: center;
+.header-container {
+	top: 13.5rem;
 }
 
-.search_bar{
-    margin:100px auto;
+.database-header-img {
+	text-align: center;
 }
 
-.search_button{
-    background-color:orangered;
-    color:white;
-    border-radius:10px;
+.database-header-img img {
+	width: 100%;
+}
+
+.header-info p {
+	margin-top: -1rem;
+}
+
+/* database container */
+
+.database-container {
+	padding: 2rem 0;
+}
+
+.database-container h1 {
+	margin-bottom: 5rem;
+	font-size: 2.5rem;
+	letter-spacing: 0.3rem;
+	text-align: center;
+	color: #aaa1b9;
+}
+
+/* search form */
+
+.search-container {
+	text-align: center;
+}
+
+.input-and-filter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.input-and-filter input {
+	width: 600px;
+	height: 50px;
+	padding-inline: 1.5rem;
+	margin-right: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9rem;
+	font-weight: 300;
+	color: #fff;
+	border: 2px solid #8072fa;
+	border-radius: 50px;
+	background-color: transparent;
+}
+
+.input-and-filter input::placeholder {
+	color: #59576b;
+}
+
+/* filter btn */
+
+.filter-btn {
+	width: 50px;
+	height: 50px;
+	font-size: 1.3rem;
+	color: #8072fa;
+	border: 2px solid #8072fa;
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.filter-btn:hover {
+	color: #000;
+	background-color: #8072fa;
+}
+
+/* filter modal */
+
+.filter-modal {
+	display: none;
+}
+
+.filter-modal-content {
+	max-width: 310px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem 0;
+	position: relative;
+	top: -3rem;
+	left: 59%;
+	padding: 1.5rem 1.5rem 1rem;
+	text-align: left;
+	color: #d0c1e8;
+	border: 2px solid #8072fa;
+	border-radius: 15px;
+	background-color: #181818;
+	transform: translate(-50%, -50%);
+}
+
+.filter-modal label {
+	font-size: 0.9rem;
+}
+
+.filter-modal input {
+	margin-right: 0.5rem;
+}
+
+/* search btn */
+
+.search-btn {
+	height: 45px;
+	margin-bottom: 4rem;
+	font-size: 1rem;
+	color: #fff;
+	background-color: #8072fa;
+}
+
+.search-btn:hover {
+	color: #000;
+	background-color: #aaa2f4;
+	transform: none;
+}
+
+/* cards-container */
+
+.cards-container {
+	width: var(--container-width-lg);
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 3rem 1rem;
+	justify-items: center;
+	margin-bottom: 5rem;
+}
+
+.cards-container img {
+	width: 75%;
+	transition: var(--transition);
+}
+
+.cards-container img:hover {
+	transform: scale(1.1);
+}
+
+/* footer */
+
+.footer-links {
+	background: linear-gradient(180deg, #434a7e 0%, #828aad 68%);
+}
+
+.footer-terms-links a,
+.footer-wotc-social a {
+	color: #362850;
+}
+
+.wotc-side h2,
+.dev-side h2 {
+	font-size: 2.5rem;
+	color: #828aad;
+}
+
+.dev-info h3 {
+	color: #d6dcf8;
+}
+
+.dev-info h4,
+.dev-loc-phone,
+.dev-info-socials a {
+	color: #362850;
 }
