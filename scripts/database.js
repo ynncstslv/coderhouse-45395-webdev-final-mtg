@@ -1,3 +1,9 @@
+/**
+ * EVENT 001 - Database
+ * collect data from Scryfall API and display card's images based on user's search
+ * also display filter modal content when user clicks the filterBtn
+ */
+
 // filter-btn default state
 let filterModalOpen = false;
 
@@ -77,14 +83,12 @@ function searchCards() {
 					});
 				} else {
 					// in case of card are not found
-					const cardsContainer = document.querySelector('.cards-container');
-					cardsContainer.innerHTML = "There isn't a card with that search...";
+					alert('No cards to show...');
 				}
 			})
 			.catch((error) => {
 				console.error('Erro:', error);
-				const cardsContainer = document.querySelector('.cards-container');
-				cardsContainer.innerHTML = 'Something went wrong. Try again later.';
+				alert('Something went wrong. Try again later.');
 			});
 	}
 }
