@@ -15,7 +15,7 @@
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:description"
-			content="This website was created as the final project of Coderhouse's web development course by André Haffner, Breno Alcântara, Lorena Costa e Yann Costa"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
 		/>
 		<meta
 			property="og:url"
@@ -31,7 +31,7 @@
 		/>
 		<meta
 			name="twitter:description"
-			content="This website was created as the final project of Coderhouse's web development course by André Haffner, Breno Alcântara, Lorena Costa e Yann Costa"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
 		/>
 		<link
 			rel="stylesheet"
@@ -47,7 +47,7 @@
 			type="image/x-icon"
 			href="../assets/images/meta/mtg-favicon.png"
 		/>
-		<title>Magic: The Gathering | Unofficial Website | Rules</title>
+		<title>Magic: The Gathering | Unofficial Website - Rules</title>
 	</head>
 	<body>
 		<nav>
@@ -63,27 +63,32 @@
 					<li><a href="./database.html">Card Database</a></li>
 					<li><a href="./contact.html">Contact</a></li>
 				</ul>
+				<div class="overlay"></div>
+				<button class="btn nav-btn" id="openBtn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<button class="btn nav-btn" id="closeBtn">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
 			</div>
 		</nav>
 		<header>
 			<div class="container header-container">
-				<div class="rules-header-img">
+				<div class="header-img">
 					<img
-						src="../assets/images/nav/mtg-logo-white.png"
-						alt="Magic: The Gathering Logo"
+						src="../assets/images/rules/rules-phyrexian.png"
+						alt="Rules written in Phyrexian language"
 					/>
-				</div>
-				<div class="header-info">
-					<p>
-						Looking for ways to play? Get started with Magic: The Gathering, and
-						dive into the rules and mechanics, with these great resources!
-					</p>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="formats-rules-filter-container">
+			<section class="container formats-rules-filter-container">
 				<h1>FORMATS & RULES</h1>
+				<p>
+					Looking for ways to play? Get started with Magic: The Gathering, and
+					dive into the rules and mechanics, with these great resources!
+				</p>
 				<div class="formats-rules-filter">
 					<button id="formatsFilter" class="rules-btn">FORMATS</button>
 					<button id="rulesFilter" class="rules-btn active active-button">
@@ -374,7 +379,7 @@
 					<div class="parts-img">
 						<img src="../assets/images/rules/rules-07.png" alt="#" />
 					</div>
-					<article class="parts-info">
+					<div class="parts-info">
 						<div class="untap-step">
 							<h2>UNTAP STEP</h2>
 							<ul>
@@ -484,7 +489,7 @@
 								</li>
 							</ul>
 						</div>
-					</article>
+					</div>
 				</article>
 			</section>
 			<section
@@ -1918,14 +1923,18 @@
 			</section>
 		</main>
 		<footer>
-			<section class="footer-links">
-				<div class="wotc-side">
-					<h2>MAGIC: THE GATHERING</h2>
+			<section class="footer-container">
+				<div class="footer-left">
 					<img
-						src="../assets/images/footer/wizards-logo.png"
+						src="../assets/images/footer/wizards-logo-blue.png"
 						alt="Wizards of the Coast Logo"
 					/>
-					<ul class="footer-terms-links">
+					<p>
+						Wizards of the Coast is a family of studios specializing in building
+						role playing, trading card, and digital games for all genres of
+						players.
+					</p>
+					<ul class="footer-wotc-terms">
 						<li>
 							<a
 								href="https://company.wizards.com/en/legal/terms"
@@ -1978,19 +1987,18 @@
 						</li>
 					</ul>
 				</div>
-				<div class="dev-side">
-					<h2>WEBSITE DEVELOPERS</h2>
+				<div class="footer-right">
 					<div class="dev-info-container">
 						<div class="dev-info">
 							<h3>Breno Alcântara</h3>
-							<h4>Front-End Developer</h4>
-							<ul class="dev-loc-phone">
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
 								<li><i class="fa-solid fa-location-dot"></i> Brasília, DF</li>
 								<li>
 									<i class="fa-brands fa-whatsapp"></i> +55 61 9 9122-5677
 								</li>
 							</ul>
-							<ul class="dev-info-socials">
+							<ul class="dev-socials">
 								<li>
 									<a href="https://github.com/breno-alcantara" target="_blank"
 										><i class="fa-brands fa-github"></i
@@ -2020,32 +2028,63 @@
 							</ul>
 						</div>
 						<div class="dev-info">
-							<h3>Yann Costa</h3>
-							<h4>Front-End Developer</h4>
-							<ul class="dev-loc-phone">
+							<h3>Lorena Costa</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
+								<li><i class="fa-solid fa-location-dot"></i> Lisboa, PT</li>
+								<li><i class="fa-brands fa-whatsapp"></i> +351 910 471 812</li>
+							</ul>
+							<ul class="dev-socials">
+								<li>
+									<a href="https://github.com/Lorenamvcosta/" target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://linkedin.com/in/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+						<div class="dev-info">
+							<h3>Yann Costa e Silva</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
 								<li><i class="fa-solid fa-location-dot"></i> São Paulo, SP</li>
 								<li>
 									<i class="fa-brands fa-whatsapp"></i> +55 11 9 8439-7728
 								</li>
 							</ul>
-							<ul class="dev-info-socials">
+							<ul class="dev-socials">
 								<li>
-									<a href="https://github.com/ynncstslv/" target="_blank"
+									<a href="https://github.com/ynncstslv" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://linkedin.com/in/ynncstslv/" target="_blank"
+									<a
+										href="https://www.linkedin.com/in/ynncstslv"
+										target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://instagram.com/ynncstslv" target="_blank"
+									<a href="https://www.instagram.com/ynncstslv/" target="_blank"
 										><i class="fa-brands fa-instagram"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://twitter.com/dltyrslf" target="_blank"
+									<a href="https://twitter.com/ynncstslv" target="_blank"
 										><i class="fa-brands fa-twitter"></i
 									></a>
 								</li>
@@ -2054,7 +2093,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="copyright">
+			<section class="footer-copyright">
 				<div class="footer-copyright-left">
 					<small
 						>Magic: The Gathering &copy;1993-2023 Wizards of the Coast
@@ -2063,12 +2102,14 @@
 				</div>
 				<div class="footer-copyright-right">
 					<small
-						>Website created by Breno Alcântara & Yann Costa &copy;2023
-						Copyright</small
+						>Website created by Breno Alcântara, Lorena Costa & Yann Costa e
+						Silva &copy;2023 Copyright</small
 					>
 				</div>
 			</section>
 		</footer>
+		<!-- javascript -->
 		<script src="../scripts/script.js"></script>
+		<script src="../scripts/rules.js"></script>
 	</body>
 </html>

@@ -179,6 +179,7 @@ header {
 @media screen and (max-width: 1024px) {
 	.nav-menu {
 		border: 2px solid var(--color-purple-100);
+		background-color: var(--color-purple-100);
 	}
 
 	.cards-container {
