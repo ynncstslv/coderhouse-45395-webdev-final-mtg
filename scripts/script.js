@@ -1,8 +1,7 @@
-/* 
-event #001
-nav styling
-change navbar style based on scroll
-*/
+/**
+ * EVENT 001 - All
+ * change navbar style on scroll
+ */
 
 window.addEventListener('scroll', () => {
 	document
@@ -10,56 +9,58 @@ window.addEventListener('scroll', () => {
 		.classList.toggle('window-scroll', window.scrollY > 100);
 });
 
-/* 
-event #002
-rules and formats page filtering
-hide and display content based on user's choice
-*/
+/**
+ * EVENT 002 - All
+ * change navbar display on responsive state, and toggle .nav-menu on button click
+ */
 
-const formats = document.getElementById('formatsFilter');
-const rules = document.getElementById('rulesFilter');
-const formatsContent = document.getElementById('theFormatsContent');
-const rulesContent = document.getElementById('theRulesContent');
+// show responsive menu function
+function openMenu() {
+	document.getElementById('openBtn').style.display = 'none';
+	document.getElementById('closeBtn').style.display = 'inline-block';
+	document.querySelector('.nav-menu').style.display = 'flex';
 
-formatsFilter.addEventListener('click', () => {
-	theFormatsContent.classList.add('active');
-	formatsFilter.classList.add('active-button');
-	theRulesContent.classList.add('content');
-	theFormatsContent.classList.remove('content');
-	theRulesContent.classList.remove('active');
-	rulesFilter.classList.remove('active-button');
-});
+	// displays the overlay only on <= 440 screens
+	if (window.innerWidth <= 440) {
+		document.querySelector('.overlay').style.display = 'block';
+	}
+}
 
-rulesFilter.addEventListener('click', () => {
-	theRulesContent.classList.add('active');
-	rulesFilter.classList.add('active-button');
-	theFormatsContent.classList.add('content');
-	theRulesContent.classList.remove('content');
-	theFormatsContent.classList.remove('active');
-	formatsFilter.classList.remove('active-button');
-});
+// close responsive menu function
+function closeMenu() {
+	document.getElementById('openBtn').style.display = 'inline-block';
+	document.getElementById('closeBtn').style.display = 'none';
+	document.querySelector('.nav-menu').style.display = 'none';
+	document.querySelector('.overlay').style.display = 'none';
+}
 
-/* 
-event #003
-format filtering
-hide and display content based on user's choice
-*/
+// verify the size of the screen and change nav state based in it
+function checkScreenWidth() {
+	if (window.innerWidth <= 1024) {
+		// responsive state
+		document.getElementById('openBtn').style.display = 'inline-block';
+		document.getElementById('closeBtn').style.display = 'none';
+		document.querySelector('.nav-menu').style.display = 'none';
+		if (window.innerWidth <= 440) {
+			document.querySelector('.overlay').style.display = 'none';
+		}
+	} else {
+		// original state
+		document.getElementById('openBtn').style.display = 'none';
+		document.getElementById('closeBtn').style.display = 'none';
+		document.querySelector('.nav-menu').style.display = 'flex';
+		document.querySelector('.overlay').style.display = 'none';
+	}
+}
 
-const listItems = document.querySelectorAll('.formats-item');
-const contents = document.querySelectorAll('.format-content');
+// add event listener to openBtn
+document.getElementById('openBtn').addEventListener('click', openMenu);
 
-listItems.forEach((item) => {
-	item.addEventListener('click', () => {
-		// hide default content
-		document.querySelector('.default-content').style.display = 'none';
+// add event listener to closeBtn
+document.getElementById('closeBtn').addEventListener('click', closeMenu);
 
-		// hide all contents
-		contents.forEach((content) => {
-			content.style.display = 'none';
-		});
+// add event listener to verify the size of the screen on window resize
+window.addEventListener('resize', checkScreenWidth);
 
-		// show content related to clicked item
-		const contentId = item.id + '-content';
-		document.getElementById(contentId).style.display = 'block';
-	});
-});
+// runs the verification on page load
+checkScreenWidth();
