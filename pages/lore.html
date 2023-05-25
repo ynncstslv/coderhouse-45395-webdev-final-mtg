@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- ===== meta | conventional | start ===== -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- ===== meta | conventional | end ===== -->
-		<!-- ===== meta | facebook | start ===== -->
-		<meta property="og:title" content="#" />
-		<meta property="og:image" content="#" />
-		<meta property="og:type" content="#" />
-		<meta property="og:description" content="#" />
-		<meta property="og:url" content="#" />
-		<meta property="og:site_name" content="#" />
-		<!-- ===== meta | facebook | end ===== -->
-		<!-- ===== meta | twitter | start ===== -->
-		<meta name="twitter:title" content="#" />
-		<meta name="twitter:image" content="#" />
-		<meta name="twitter:description" content="#" />
-		<!-- ===== meta | twitter | end ===== -->
-		<!-- ===== css | font awesome | start ===== -->
-
+		<meta
+			property="og:title"
+			content="Magic: The Gathering | Unofficial Website"
+		/>
+		<meta
+			property="og:image"
+			content="https://assetsio.reedpopcdn.com/magic-the-gathering-phyrexia-all-will-be-one-elesh-norn-teaser-art.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+		/>
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:description"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
+		/>
+		<meta
+			property="og:url"
+			content="https://ynncstslv.github.io/coderhouse-45395-webdev-final-mtg/"
+		/>
+		<meta
+			name="twitter:title"
+			content="Magic: The Gathering | Unofficial Website"
+		/>
+		<meta
+			name="twitter:image"
+			content="https://assetsio.reedpopcdn.com/magic-the-gathering-phyrexia-all-will-be-one-elesh-norn-teaser-art.png?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+		/>
+		<meta
+			name="twitter:description"
+			content="This website was created as the final project of Coderhouse's web development course by Breno Alcântara, Lorena Costa, and Yann Costa."
+		/>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -28,44 +40,49 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-
 		<link rel="stylesheet" href="../styles/index.css" />
 		<link rel="stylesheet" href="../styles/lore.css" />
-
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="./../images/mtg-favicon.png"
-			class="icon1"
+			href="../assets/images/meta/mtg-favicon.png"
 		/>
-
-		<title>Magic: The Gathering | Unofficial Website | Lore</title>
+		<title>Magic: The Gathering | Unofficial Website - Lore</title>
 	</head>
 	<body>
+		<nav>
+			<div class="container nav-container">
+				<img
+					src="../assets/images/nav/mtg-logo-white.png"
+					alt="Magic: The Gathering Logo"
+				/>
+				<ul class="nav-menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./lore.html">Lore</a></li>
+					<li><a href="#">Rules</a></li>
+					<li><a href="./database.html">Card Database</a></li>
+					<li><a href="./contact.html">Contact</a></li>
+				</ul>
+				<div class="overlay"></div>
+				<button class="btn nav-btn" id="openBtn">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<button class="btn nav-btn" id="closeBtn">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</div>
+		</nav>
 		<header>
-			<nav>
-				<div class="container nav-container">
+			<div class="container header-container">
+				<div class="header-img">
 					<img
-						src="../assets/images/nav/mtg-logo-white.png"
-						alt="Magic: The Gathering Logo"
+						src="../assets/images/rules/rules-phyrexian.png"
+						alt="Rules written in Phyrexian language"
 					/>
-					<ul class="nav-menu">
-						<li><a href="../index.html">Home</a></li>
-						<li><a href="#">Lore</a></li>
-						<li><a href="./rules.html">Rules</a></li>
-						<li><a href="./database.html">Card Database</a></li>
-						<li><a href="./contact.html">Contact</a></li>
-					</ul>
 				</div>
-			</nav>
+			</div>
+		</header>
+		<!-- <header>
 			<div>
 				<div class="header-container">
 					<div class="rules-header-img">
@@ -83,8 +100,7 @@
 					</div>
 				</div>
 			</div>
-		</header>
-
+		</header> -->
 		<main class="main-conteiner">
 			<section class="formats-and-rules-filter">
 				<h1>LORE</h1>
@@ -510,14 +526,18 @@
 		</div>
 
 		<footer>
-			<section class="footer-links">
-				<div class="wotc-side">
-					<h2>MAGIC: THE GATHERING</h2>
+			<section class="footer-container">
+				<div class="footer-left">
 					<img
-						src="../assets/images/footer/wizards-logo.png"
+						src="../assets/images/footer/wizards-logo-dark-green.png"
 						alt="Wizards of the Coast Logo"
 					/>
-					<ul class="footer-terms-links">
+					<p>
+						Wizards of the Coast is a family of studios specializing in building
+						role playing, trading card, and digital games for all genres of
+						players.
+					</p>
+					<ul class="footer-wotc-terms">
 						<li>
 							<a
 								href="https://company.wizards.com/en/legal/terms"
@@ -570,19 +590,18 @@
 						</li>
 					</ul>
 				</div>
-				<div class="dev-side">
-					<h2>WEBSITE DEVELOPERS</h2>
+				<div class="footer-right">
 					<div class="dev-info-container">
 						<div class="dev-info">
 							<h3>Breno Alcântara</h3>
-							<h4>Front-End Developer</h4>
-							<ul class="dev-loc-phone">
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
 								<li><i class="fa-solid fa-location-dot"></i> Brasília, DF</li>
 								<li>
 									<i class="fa-brands fa-whatsapp"></i> +55 61 9 9122-5677
 								</li>
 							</ul>
-							<ul class="dev-info-socials">
+							<ul class="dev-socials">
 								<li>
 									<a href="https://github.com/breno-alcantara" target="_blank"
 										><i class="fa-brands fa-github"></i
@@ -612,32 +631,63 @@
 							</ul>
 						</div>
 						<div class="dev-info">
-							<h3>Yann Costa</h3>
-							<h4>Front-End Developer</h4>
-							<ul class="dev-loc-phone">
+							<h3>Lorena Costa</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
+								<li><i class="fa-solid fa-location-dot"></i> Lisboa, PT</li>
+								<li><i class="fa-brands fa-whatsapp"></i> +351 910 471 812</li>
+							</ul>
+							<ul class="dev-socials">
+								<li>
+									<a href="https://github.com/Lorenamvcosta/" target="_blank"
+										><i class="fa-brands fa-github"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://linkedin.com/in/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-linkedin-in"></i
+									></a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/lorenamvcosta/"
+										target="_blank"
+										><i class="fa-brands fa-instagram"></i
+									></a>
+								</li>
+							</ul>
+						</div>
+						<div class="dev-info">
+							<h3>Yann Costa e Silva</h3>
+							<h4>Frontend Developer</h4>
+							<ul class="dev-contact">
 								<li><i class="fa-solid fa-location-dot"></i> São Paulo, SP</li>
 								<li>
 									<i class="fa-brands fa-whatsapp"></i> +55 11 9 8439-7728
 								</li>
 							</ul>
-							<ul class="dev-info-socials">
+							<ul class="dev-socials">
 								<li>
-									<a href="https://github.com/ynncstslv/" target="_blank"
+									<a href="https://github.com/ynncstslv" target="_blank"
 										><i class="fa-brands fa-github"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://linkedin.com/in/ynncstslv/" target="_blank"
+									<a
+										href="https://www.linkedin.com/in/ynncstslv"
+										target="_blank"
 										><i class="fa-brands fa-linkedin-in"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://instagram.com/ynncstslv" target="_blank"
+									<a href="https://www.instagram.com/ynncstslv/" target="_blank"
 										><i class="fa-brands fa-instagram"></i
 									></a>
 								</li>
 								<li>
-									<a href="https://twitter.com/dltyrslf" target="_blank"
+									<a href="https://twitter.com/ynncstslv" target="_blank"
 										><i class="fa-brands fa-twitter"></i
 									></a>
 								</li>
@@ -646,7 +696,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="copyright">
+			<section class="footer-copyright">
 				<div class="footer-copyright-left">
 					<small
 						>Magic: The Gathering &copy;1993-2023 Wizards of the Coast
@@ -655,15 +705,13 @@
 				</div>
 				<div class="footer-copyright-right">
 					<small
-						>Website created by Breno Alcântara & Yann Costa &copy;2023
-						Copyright</small
+						>Website created by Breno Alcântara, Lorena Costa & Yann Costa e
+						Silva &copy;2023 Copyright</small
 					>
 				</div>
 			</section>
 		</footer>
-		<!-- ===== footer | end ===== -->
-		<!-- ===== js | custom | start ===== -->
+		<!-- javascript -->
 		<script src="../scripts/script.js"></script>
-		<!-- ===== js | custom | end ===== -->
 	</body>
 </html>
